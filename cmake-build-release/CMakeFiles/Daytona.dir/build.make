@@ -56,41 +56,41 @@ include CMakeFiles/Daytona.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Daytona.dir/flags.make
 
-CMakeFiles/Daytona.dir/main.cpp.obj: CMakeFiles/Daytona.dir/flags.make
-CMakeFiles/Daytona.dir/main.cpp.obj: CMakeFiles/Daytona.dir/includes_CXX.rsp
-CMakeFiles/Daytona.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Daytona.dir/main.cpp.obj"
-	D:\MinGW64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Daytona.dir\main.cpp.obj -c D:\WORKSPACE\C++\Daytona\main.cpp
+CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj: CMakeFiles/Daytona.dir/flags.make
+CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj: CMakeFiles/Daytona.dir/includes_CXX.rsp
+CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj: ../src/EntryPoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj"
+	D:\MinGW64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Daytona.dir\src\EntryPoint.cpp.obj -c D:\WORKSPACE\C++\Daytona\src\EntryPoint.cpp
 
-CMakeFiles/Daytona.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Daytona.dir/main.cpp.i"
-	D:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\WORKSPACE\C++\Daytona\main.cpp > CMakeFiles\Daytona.dir\main.cpp.i
+CMakeFiles/Daytona.dir/src/EntryPoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Daytona.dir/src/EntryPoint.cpp.i"
+	D:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\WORKSPACE\C++\Daytona\src\EntryPoint.cpp > CMakeFiles\Daytona.dir\src\EntryPoint.cpp.i
 
-CMakeFiles/Daytona.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Daytona.dir/main.cpp.s"
-	D:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\WORKSPACE\C++\Daytona\main.cpp -o CMakeFiles\Daytona.dir\main.cpp.s
+CMakeFiles/Daytona.dir/src/EntryPoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Daytona.dir/src/EntryPoint.cpp.s"
+	D:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\WORKSPACE\C++\Daytona\src\EntryPoint.cpp -o CMakeFiles\Daytona.dir\src\EntryPoint.cpp.s
 
-CMakeFiles/Daytona.dir/main.cpp.obj.requires:
+CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Daytona.dir/main.cpp.obj.requires
+.PHONY : CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj.requires
 
-CMakeFiles/Daytona.dir/main.cpp.obj.provides: CMakeFiles/Daytona.dir/main.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Daytona.dir\build.make CMakeFiles/Daytona.dir/main.cpp.obj.provides.build
-.PHONY : CMakeFiles/Daytona.dir/main.cpp.obj.provides
+CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj.provides: CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Daytona.dir\build.make CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj.provides.build
+.PHONY : CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj.provides
 
-CMakeFiles/Daytona.dir/main.cpp.obj.provides.build: CMakeFiles/Daytona.dir/main.cpp.obj
+CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj.provides.build: CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj
 
 
 # Object files for target Daytona
 Daytona_OBJECTS = \
-"CMakeFiles/Daytona.dir/main.cpp.obj"
+"CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj"
 
 # External object files for target Daytona
 Daytona_EXTERNAL_OBJECTS =
 
-Daytona.exe: CMakeFiles/Daytona.dir/main.cpp.obj
+Daytona.exe: CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj
 Daytona.exe: CMakeFiles/Daytona.dir/build.make
-Daytona.exe: WindowSystem/liblibWindowSystem.a
+Daytona.exe: src/WindowSystem/liblibWindowSystem.a
 Daytona.exe: D:/Libs/SDL2/lib/libSDL2main.a
 Daytona.exe: D:/Libs/SDL2/lib/libSDL2.dll.a
 Daytona.exe: CMakeFiles/Daytona.dir/linklibs.rsp
@@ -104,7 +104,7 @@ CMakeFiles/Daytona.dir/build: Daytona.exe
 
 .PHONY : CMakeFiles/Daytona.dir/build
 
-CMakeFiles/Daytona.dir/requires: CMakeFiles/Daytona.dir/main.cpp.obj.requires
+CMakeFiles/Daytona.dir/requires: CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj.requires
 
 .PHONY : CMakeFiles/Daytona.dir/requires
 

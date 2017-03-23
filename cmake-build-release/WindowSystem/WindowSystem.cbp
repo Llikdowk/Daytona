@@ -66,6 +66,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/WindowSystem/Private/Log.cpp">
+			<Option target="libWindowSystem"/>
+		</Unit>
 		<Unit filename="D:/WORKSPACE/C++/Daytona/WindowSystem/Private/Window.cpp">
 			<Option target="libWindowSystem"/>
 		</Unit>

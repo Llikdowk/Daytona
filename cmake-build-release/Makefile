@@ -55,6 +55,40 @@ CMAKE_BINARY_DIR = D:\WORKSPACE\C++\Daytona\cmake-build-release
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -66,16 +100,26 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : edit_cache/fast
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -119,7 +163,7 @@ Daytona: cmake_check_build_system
 
 # fast build rule for target.
 Daytona/fast:
-	$(MAKE) -f CMakeFiles\Daytona.dir\build.make CMakeFiles/Daytona.dir/build
+	$(MAKE) -f src\CMakeFiles\Daytona.dir\build.make src/CMakeFiles/Daytona.dir/build
 .PHONY : Daytona/fast
 
 #=============================================================================
@@ -132,35 +176,86 @@ libWindowSystem: cmake_check_build_system
 
 # fast build rule for target.
 libWindowSystem/fast:
-	$(MAKE) -f WindowSystem\CMakeFiles\libWindowSystem.dir\build.make WindowSystem/CMakeFiles/libWindowSystem.dir/build
+	$(MAKE) -f src\WindowSystem\CMakeFiles\libWindowSystem.dir\build.make src/WindowSystem/CMakeFiles/libWindowSystem.dir/build
 .PHONY : libWindowSystem/fast
 
-main.obj: main.cpp.obj
+#=============================================================================
+# Target rules for targets named test_sanityCheck
 
-.PHONY : main.obj
+# Build rule for target.
+test_sanityCheck: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 test_sanityCheck
+.PHONY : test_sanityCheck
 
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Daytona.dir\build.make CMakeFiles/Daytona.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+# fast build rule for target.
+test_sanityCheck/fast:
+	$(MAKE) -f testsuite\CMakeFiles\test_sanityCheck.dir\build.make testsuite/CMakeFiles/test_sanityCheck.dir/build
+.PHONY : test_sanityCheck/fast
 
-main.i: main.cpp.i
+#=============================================================================
+# Target rules for targets named gmock_main
 
-.PHONY : main.i
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\Daytona.dir\build.make CMakeFiles/Daytona.dir/main.cpp.i
-.PHONY : main.cpp.i
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
 
-main.s: main.cpp.s
+#=============================================================================
+# Target rules for targets named gmock
 
-.PHONY : main.s
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
 
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\Daytona.dir\build.make CMakeFiles/Daytona.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\build.make thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f thirdparty\googletest\googlemock\gtest\CMakeFiles\gtest.dir\build.make thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f thirdparty\googletest\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named glm_dummy
+
+# Build rule for target.
+glm_dummy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 glm_dummy
+.PHONY : glm_dummy
+
+# fast build rule for target.
+glm_dummy/fast:
+	$(MAKE) -f thirdparty\glm\glm\CMakeFiles\glm_dummy.dir\build.make thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/build
+.PHONY : glm_dummy/fast
 
 # Help Target
 help:
@@ -168,13 +263,20 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... Daytona
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... rebuild_cache
+	@echo ... list_install_components
+	@echo ... install/strip
+	@echo ... Daytona
 	@echo ... libWindowSystem
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... test_sanityCheck
+	@echo ... gmock_main
+	@echo ... gmock
+	@echo ... gtest
+	@echo ... gtest_main
+	@echo ... glm_dummy
 .PHONY : help
 
 

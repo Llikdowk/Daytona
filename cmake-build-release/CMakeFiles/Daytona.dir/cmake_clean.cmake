@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Daytona.dir/main.cpp.obj"
+  "CMakeFiles/Daytona.dir/src/EntryPoint.cpp.obj"
   "Daytona.pdb"
   "Daytona.exe"
   "Daytona.exe.manifest"

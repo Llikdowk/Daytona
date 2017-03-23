@@ -124,6 +124,33 @@ libWindowSystem/fast:
 	cd /d D:\WORKSPACE\C++\Daytona\cmake-build-release && $(MAKE) -f WindowSystem\CMakeFiles\libWindowSystem.dir\build.make WindowSystem/CMakeFiles/libWindowSystem.dir/build
 .PHONY : libWindowSystem/fast
 
+Private/Log.obj: Private/Log.cpp.obj
+
+.PHONY : Private/Log.obj
+
+# target to build an object file
+Private/Log.cpp.obj:
+	cd /d D:\WORKSPACE\C++\Daytona\cmake-build-release && $(MAKE) -f WindowSystem\CMakeFiles\libWindowSystem.dir\build.make WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj
+.PHONY : Private/Log.cpp.obj
+
+Private/Log.i: Private/Log.cpp.i
+
+.PHONY : Private/Log.i
+
+# target to preprocess a source file
+Private/Log.cpp.i:
+	cd /d D:\WORKSPACE\C++\Daytona\cmake-build-release && $(MAKE) -f WindowSystem\CMakeFiles\libWindowSystem.dir\build.make WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.i
+.PHONY : Private/Log.cpp.i
+
+Private/Log.s: Private/Log.cpp.s
+
+.PHONY : Private/Log.s
+
+# target to generate assembly for a file
+Private/Log.cpp.s:
+	cd /d D:\WORKSPACE\C++\Daytona\cmake-build-release && $(MAKE) -f WindowSystem\CMakeFiles\libWindowSystem.dir\build.make WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.s
+.PHONY : Private/Log.cpp.s
+
 Private/Window.obj: Private/Window.cpp.obj
 
 .PHONY : Private/Window.obj
@@ -160,6 +187,9 @@ help:
 	@echo ... libWindowSystem
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Private/Log.obj
+	@echo ... Private/Log.i
+	@echo ... Private/Log.s
 	@echo ... Private/Window.obj
 	@echo ... Private/Window.i
 	@echo ... Private/Window.s

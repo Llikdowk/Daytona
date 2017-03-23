@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/WORKSPACE/C++/Daytona/WindowSystem/Private/Log.cpp" "D:/WORKSPACE/C++/Daytona/cmake-build-release/WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj"
   "D:/WORKSPACE/C++/Daytona/WindowSystem/Private/Window.cpp" "D:/WORKSPACE/C++/Daytona/cmake-build-release/WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Window.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

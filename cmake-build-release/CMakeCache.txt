@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Builds the googlemock subproject
+BUILD_GMOCK:BOOL=ON
+
+//Builds the googletest subproject
+BUILD_GTEST:BOOL=OFF
+
+//Build shared libraries (DLLs).
+BUILD_SHARED_LIBS:BOOL=OFF
+
 //Path to a program.
 CMAKE_AR:FILEPATH=D:/MinGW64/bin/ar.exe
 
@@ -93,8 +102,53 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Convert GNU import libraries to MS format (requires Visual Studio)
 CMAKE_GNUtoMS:BOOL=OFF
 
+//user executables (bin)
+CMAKE_INSTALL_BINDIR:PATH=bin
+
+//read-only architecture-independent data (DATAROOTDIR)
+CMAKE_INSTALL_DATADIR:PATH=
+
+//read-only architecture-independent data root (share)
+CMAKE_INSTALL_DATAROOTDIR:PATH=share
+
+//documentation root (DATAROOTDIR/doc/PROJECT_NAME)
+CMAKE_INSTALL_DOCDIR:PATH=
+
+//C header files (include)
+CMAKE_INSTALL_INCLUDEDIR:PATH=include
+
+//info documentation (DATAROOTDIR/info)
+CMAKE_INSTALL_INFODIR:PATH=
+
+//object code libraries (lib)
+CMAKE_INSTALL_LIBDIR:PATH=lib
+
+//program executables (libexec)
+CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
+
+//locale-dependent data (DATAROOTDIR/locale)
+CMAKE_INSTALL_LOCALEDIR:PATH=
+
+//modifiable single-machine data (var)
+CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
+
+//man documentation (DATAROOTDIR/man)
+CMAKE_INSTALL_MANDIR:PATH=
+
+//C header files for non-gcc (/usr/include)
+CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Daytona
+
+//system admin executables (sbin)
+CMAKE_INSTALL_SBINDIR:PATH=sbin
+
+//modifiable architecture-independent data (com)
+CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
+
+//read-only single-machine data (etc)
+CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=D:/MinGW64/bin/ld.exe
@@ -193,6 +247,57 @@ Daytona_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/cmake-build-release
 //Value Computed by CMake
 Daytona_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona
 
+//GLM dynamic library
+GLM_DYNAMIC_LIBRARY_ENABLE:BOOL=OFF
+
+//GLM install
+GLM_INSTALL_ENABLE:BOOL=ON
+
+//GLM static library
+GLM_STATIC_LIBRARY_ENABLE:BOOL=OFF
+
+//GLM test
+GLM_TEST_ENABLE:BOOL=OFF
+
+//Enable C++ 0x
+GLM_TEST_ENABLE_CXX_0X:BOOL=OFF
+
+//Enable C++ 11
+GLM_TEST_ENABLE_CXX_11:BOOL=OFF
+
+//Enable C++ 14
+GLM_TEST_ENABLE_CXX_14:BOOL=OFF
+
+//Enable C++ 1y
+GLM_TEST_ENABLE_CXX_1Y:BOOL=OFF
+
+//Enable C++ 1z
+GLM_TEST_ENABLE_CXX_1Z:BOOL=OFF
+
+//Enable C++ 98
+GLM_TEST_ENABLE_CXX_98:BOOL=OFF
+
+//Enable fast math optimizations
+GLM_TEST_ENABLE_FAST_MATH:BOOL=OFF
+
+//Enable language extensions
+GLM_TEST_ENABLE_LANG_EXTENSIONS:BOOL=OFF
+
+//Enable AVX optimizations
+GLM_TEST_ENABLE_SIMD_AVX:BOOL=OFF
+
+//Enable AVX2 optimizations
+GLM_TEST_ENABLE_SIMD_AVX2:BOOL=OFF
+
+//Enable SSE2 optimizations
+GLM_TEST_ENABLE_SIMD_SSE2:BOOL=OFF
+
+//Enable SSE3 optimizations
+GLM_TEST_ENABLE_SIMD_SSE3:BOOL=OFF
+
+//Force 'pure' instructions
+GLM_TEST_FORCE_PURE:BOOL=OFF
+
 //mwindows for MinGW
 MINGW32_LIBRARY:STRING=mingw32;-mwindows
 
@@ -202,8 +307,14 @@ OPENGL_gl_LIBRARY:STRING=opengl32
 //GLU library for win32
 OPENGL_glu_LIBRARY:STRING=glu32
 
+//Path to a program.
+PYTHON_EXECUTABLE:FILEPATH=C:/Users/Llikdowk/AppData/Local/Programs/Python/Python36-32/python.exe
+
 //Path to a library.
 SDL2MAIN_LIBRARY:FILEPATH=D:/Libs/SDL2/lib/libSDL2main.a
+
+//The directory containing a CMake configuration file for SDL2.
+SDL2_DIR:PATH=D:/MinGW32/lib/cmake/SDL2
 
 //Path to a file.
 SDL2_INCLUDE_DIR:PATH=D:/Libs/SDL2/include/SDL2
@@ -212,13 +323,86 @@ SDL2_INCLUDE_DIR:PATH=D:/Libs/SDL2/include/SDL2
 SDL2_LIBRARY:STRING=mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;D:/Libs/SDL2/lib/libSDL2.dll.a
 
 //Value Computed by CMake
-WindowSystem_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/cmake-build-release/WindowSystem
+WindowSystem_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/cmake-build-release/src/WindowSystem
 
 //Value Computed by CMake
-WindowSystem_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/WindowSystem
+WindowSystem_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/src/WindowSystem
+
+//Value Computed by CMake
+glm_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/cmake-build-release/thirdparty/glm
+
+//Value Computed by CMake
+glm_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/thirdparty/glm
+
+//Value Computed by CMake
+gmock_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/cmake-build-release/thirdparty/googletest/googlemock
+
+//Dependencies for target
+gmock_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+gmock_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock
+
+//Build all of Google Mock's own tests.
+gmock_build_tests:BOOL=OFF
+
+//Dependencies for target
+gmock_main_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+googletest-distribution_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/cmake-build-release/thirdparty/googletest
+
+//Value Computed by CMake
+googletest-distribution_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/thirdparty/googletest
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/cmake-build-release/thirdparty/googletest/googlemock/gtest
+
+//Dependencies for target
+gtest_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+gtest_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest
+
+//Build gtest's sample programs.
+gtest_build_samples:BOOL=OFF
+
+//Build all of gtest's own tests.
+gtest_build_tests:BOOL=OFF
+
+//Disable uses of pthreads in gtest.
+gtest_disable_pthreads:BOOL=OFF
+
+//Use shared (DLL) run-time lib even when Google Test is built
+// as static lib.
+gtest_force_shared_crt:BOOL=OFF
+
+//Build gtest with internal symbols hidden in shared libraries.
+gtest_hide_internal_symbols:BOOL=OFF
+
+//Dependencies for the target
+gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Dependencies for the target
 libWindowSystem_LIB_DEPENDS:STATIC=general;mingw32;general;-mwindows;general;D:/Libs/SDL2/lib/libSDL2main.a;general;D:/Libs/SDL2/lib/libSDL2.dll.a;
+
+//Value Computed by CMake
+src_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/cmake-build-release/src
+
+//Value Computed by CMake
+src_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/src
+
+//Value Computed by CMake
+test_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/cmake-build-release/test
+
+//Value Computed by CMake
+test_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/test
+
+//Value Computed by CMake
+testsuite_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/cmake-build-release/testsuite
+
+//Value Computed by CMake
+testsuite_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/testsuite
 
 
 ########################
@@ -306,6 +490,36 @@ CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=D:/WORKSPACE/C++/Daytona
+//ADVANCED property for variable: CMAKE_INSTALL_BINDIR
+CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATADIR
+CMAKE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATAROOTDIR
+CMAKE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DOCDIR
+CMAKE_INSTALL_DOCDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INCLUDEDIR
+CMAKE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INFODIR
+CMAKE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBDIR
+CMAKE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBEXECDIR
+CMAKE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALEDIR
+CMAKE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALSTATEDIR
+CMAKE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_MANDIR
+CMAKE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_OLDINCLUDEDIR
+CMAKE_INSTALL_OLDINCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SBINDIR
+CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
+CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
+CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
@@ -323,7 +537,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -369,6 +583,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][v()]
+//Details about finding PythonInterp
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Users/Llikdowk/AppData/Local/Programs/Python/Python36-32/python.exe][v3.6()]
 //Details about finding SDL2
 FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;D:/Libs/SDL2/lib/libSDL2.dll.a][D:/Libs/SDL2/include/SDL2][v()]
 //Details about finding Threads
@@ -377,5 +593,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_glu_LIBRARY
 OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
-SDL2_LIBRARY_TEMP:INTERNAL=mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;D:/Libs/SDL2/lib/libSDL2.dll.a
+//ADVANCED property for variable: PYTHON_EXECUTABLE
+PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+SDL2_LIBRARY_TEMP:INTERNAL=mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;mingw32;-mwindows;D:/Libs/SDL2/lib/libSDL2main.a;D:/Libs/SDL2/lib/libSDL2.dll.a
 

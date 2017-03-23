@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/libWindowSystem.dir/Private/Window.cpp.obj"
+  "CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj"
   "liblibWindowSystem.pdb"
   "liblibWindowSystem.a"
 )

@@ -59,96 +59,555 @@ CMAKE_SOURCE_DIR = D:\WORKSPACE\C++\Daytona
 CMAKE_BINARY_DIR = D:\WORKSPACE\C++\Daytona\cmake-build-release
 
 #=============================================================================
-# Target rules for target CMakeFiles/Daytona.dir
+# Directory level rules for directory src
+
+# Convenience name for "all" pass in the directory.
+src/all: src/CMakeFiles/Daytona.dir/all
+src/all: src/WindowSystem/all
+
+.PHONY : src/all
+
+# Convenience name for "clean" pass in the directory.
+src/clean: src/CMakeFiles/Daytona.dir/clean
+src/clean: src/WindowSystem/clean
+
+.PHONY : src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/preinstall: src/WindowSystem/preinstall
+
+.PHONY : src/preinstall
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/Daytona.dir
 
 # All Build rule for target.
-CMakeFiles/Daytona.dir/all: WindowSystem/CMakeFiles/libWindowSystem.dir/all
-	$(MAKE) -f CMakeFiles\Daytona.dir\build.make CMakeFiles/Daytona.dir/depend
-	$(MAKE) -f CMakeFiles\Daytona.dir\build.make CMakeFiles/Daytona.dir/build
+src/CMakeFiles/Daytona.dir/all: src/WindowSystem/CMakeFiles/libWindowSystem.dir/all
+	$(MAKE) -f src\CMakeFiles\Daytona.dir\build.make src/CMakeFiles/Daytona.dir/depend
+	$(MAKE) -f src\CMakeFiles\Daytona.dir\build.make src/CMakeFiles/Daytona.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=1,2 "Built target Daytona"
-.PHONY : CMakeFiles/Daytona.dir/all
+.PHONY : src/CMakeFiles/Daytona.dir/all
 
 # Include target in all.
-all: CMakeFiles/Daytona.dir/all
+all: src/CMakeFiles/Daytona.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Daytona.dir/rule: cmake_check_build_system
+src/CMakeFiles/Daytona.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 4
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Daytona.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 src/CMakeFiles/Daytona.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 0
-.PHONY : CMakeFiles/Daytona.dir/rule
+.PHONY : src/CMakeFiles/Daytona.dir/rule
 
 # Convenience name for target.
-Daytona: CMakeFiles/Daytona.dir/rule
+Daytona: src/CMakeFiles/Daytona.dir/rule
 
 .PHONY : Daytona
 
 # clean rule for target.
-CMakeFiles/Daytona.dir/clean:
-	$(MAKE) -f CMakeFiles\Daytona.dir\build.make CMakeFiles/Daytona.dir/clean
-.PHONY : CMakeFiles/Daytona.dir/clean
+src/CMakeFiles/Daytona.dir/clean:
+	$(MAKE) -f src\CMakeFiles\Daytona.dir\build.make src/CMakeFiles/Daytona.dir/clean
+.PHONY : src/CMakeFiles/Daytona.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/Daytona.dir/clean
+clean: src/CMakeFiles/Daytona.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory WindowSystem
+# Directory level rules for directory src/WindowSystem
 
 # Convenience name for "all" pass in the directory.
-WindowSystem/all: WindowSystem/CMakeFiles/libWindowSystem.dir/all
+src/WindowSystem/all: src/WindowSystem/CMakeFiles/libWindowSystem.dir/all
 
-.PHONY : WindowSystem/all
+.PHONY : src/WindowSystem/all
 
 # Convenience name for "clean" pass in the directory.
-WindowSystem/clean: WindowSystem/CMakeFiles/libWindowSystem.dir/clean
+src/WindowSystem/clean: src/WindowSystem/CMakeFiles/libWindowSystem.dir/clean
 
-.PHONY : WindowSystem/clean
+.PHONY : src/WindowSystem/clean
 
 # Convenience name for "preinstall" pass in the directory.
-WindowSystem/preinstall:
+src/WindowSystem/preinstall:
 
-.PHONY : WindowSystem/preinstall
+.PHONY : src/WindowSystem/preinstall
 
 #=============================================================================
-# Target rules for target WindowSystem/CMakeFiles/libWindowSystem.dir
+# Target rules for target src/WindowSystem/CMakeFiles/libWindowSystem.dir
 
 # All Build rule for target.
-WindowSystem/CMakeFiles/libWindowSystem.dir/all:
-	$(MAKE) -f WindowSystem\CMakeFiles\libWindowSystem.dir\build.make WindowSystem/CMakeFiles/libWindowSystem.dir/depend
-	$(MAKE) -f WindowSystem\CMakeFiles\libWindowSystem.dir\build.make WindowSystem/CMakeFiles/libWindowSystem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=3,4 "Built target libWindowSystem"
-.PHONY : WindowSystem/CMakeFiles/libWindowSystem.dir/all
+src/WindowSystem/CMakeFiles/libWindowSystem.dir/all:
+	$(MAKE) -f src\WindowSystem\CMakeFiles\libWindowSystem.dir\build.make src/WindowSystem/CMakeFiles/libWindowSystem.dir/depend
+	$(MAKE) -f src\WindowSystem\CMakeFiles\libWindowSystem.dir\build.make src/WindowSystem/CMakeFiles/libWindowSystem.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=17,18 "Built target libWindowSystem"
+.PHONY : src/WindowSystem/CMakeFiles/libWindowSystem.dir/all
 
 # Include target in all.
-all: WindowSystem/CMakeFiles/libWindowSystem.dir/all
+all: src/WindowSystem/CMakeFiles/libWindowSystem.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-WindowSystem/CMakeFiles/libWindowSystem.dir/rule: cmake_check_build_system
+src/WindowSystem/CMakeFiles/libWindowSystem.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 WindowSystem/CMakeFiles/libWindowSystem.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 src/WindowSystem/CMakeFiles/libWindowSystem.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 0
-.PHONY : WindowSystem/CMakeFiles/libWindowSystem.dir/rule
+.PHONY : src/WindowSystem/CMakeFiles/libWindowSystem.dir/rule
 
 # Convenience name for target.
-libWindowSystem: WindowSystem/CMakeFiles/libWindowSystem.dir/rule
+libWindowSystem: src/WindowSystem/CMakeFiles/libWindowSystem.dir/rule
 
 .PHONY : libWindowSystem
 
 # clean rule for target.
-WindowSystem/CMakeFiles/libWindowSystem.dir/clean:
-	$(MAKE) -f WindowSystem\CMakeFiles\libWindowSystem.dir\build.make WindowSystem/CMakeFiles/libWindowSystem.dir/clean
-.PHONY : WindowSystem/CMakeFiles/libWindowSystem.dir/clean
+src/WindowSystem/CMakeFiles/libWindowSystem.dir/clean:
+	$(MAKE) -f src\WindowSystem\CMakeFiles\libWindowSystem.dir\build.make src/WindowSystem/CMakeFiles/libWindowSystem.dir/clean
+.PHONY : src/WindowSystem/CMakeFiles/libWindowSystem.dir/clean
 
 # clean rule for target.
-clean: WindowSystem/CMakeFiles/libWindowSystem.dir/clean
+clean: src/WindowSystem/CMakeFiles/libWindowSystem.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory testsuite
+
+# Convenience name for "all" pass in the directory.
+testsuite/all: testsuite/CMakeFiles/test_sanityCheck.dir/all
+
+.PHONY : testsuite/all
+
+# Convenience name for "clean" pass in the directory.
+testsuite/clean: testsuite/CMakeFiles/test_sanityCheck.dir/clean
+
+.PHONY : testsuite/clean
+
+# Convenience name for "preinstall" pass in the directory.
+testsuite/preinstall:
+
+.PHONY : testsuite/preinstall
+
+#=============================================================================
+# Target rules for target testsuite/CMakeFiles/test_sanityCheck.dir
+
+# All Build rule for target.
+testsuite/CMakeFiles/test_sanityCheck.dir/all: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+testsuite/CMakeFiles/test_sanityCheck.dir/all: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) -f testsuite\CMakeFiles\test_sanityCheck.dir\build.make testsuite/CMakeFiles/test_sanityCheck.dir/depend
+	$(MAKE) -f testsuite\CMakeFiles\test_sanityCheck.dir\build.make testsuite/CMakeFiles/test_sanityCheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=19,20 "Built target test_sanityCheck"
+.PHONY : testsuite/CMakeFiles/test_sanityCheck.dir/all
+
+# Include target in all.
+all: testsuite/CMakeFiles/test_sanityCheck.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+testsuite/CMakeFiles/test_sanityCheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 6
+	$(MAKE) -f CMakeFiles\Makefile2 testsuite/CMakeFiles/test_sanityCheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 0
+.PHONY : testsuite/CMakeFiles/test_sanityCheck.dir/rule
+
+# Convenience name for target.
+test_sanityCheck: testsuite/CMakeFiles/test_sanityCheck.dir/rule
+
+.PHONY : test_sanityCheck
+
+# clean rule for target.
+testsuite/CMakeFiles/test_sanityCheck.dir/clean:
+	$(MAKE) -f testsuite\CMakeFiles\test_sanityCheck.dir\build.make testsuite/CMakeFiles/test_sanityCheck.dir/clean
+.PHONY : testsuite/CMakeFiles/test_sanityCheck.dir/clean
+
+# clean rule for target.
+clean: testsuite/CMakeFiles/test_sanityCheck.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/googletest
+
+# Convenience name for "all" pass in the directory.
+thirdparty/googletest/all: thirdparty/googletest/googlemock/all
+
+.PHONY : thirdparty/googletest/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/googletest/clean: thirdparty/googletest/googlemock/clean
+
+.PHONY : thirdparty/googletest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/googletest/preinstall: thirdparty/googletest/googlemock/preinstall
+
+.PHONY : thirdparty/googletest/preinstall
+
+#=============================================================================
+# Directory level rules for directory thirdparty/googletest/googlemock
+
+# Convenience name for "all" pass in the directory.
+thirdparty/googletest/googlemock/all: thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+thirdparty/googletest/googlemock/all: thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/all
+thirdparty/googletest/googlemock/all: thirdparty/googletest/googlemock/gtest/all
+
+.PHONY : thirdparty/googletest/googlemock/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/googletest/googlemock/clean: thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+thirdparty/googletest/googlemock/clean: thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/clean
+thirdparty/googletest/googlemock/clean: thirdparty/googletest/googlemock/gtest/clean
+
+.PHONY : thirdparty/googletest/googlemock/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/googletest/googlemock/preinstall: thirdparty/googletest/googlemock/gtest/preinstall
+
+.PHONY : thirdparty/googletest/googlemock/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/all:
+	$(MAKE) -f thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) -f thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=9,10,11,12 "Built target gmock_main"
+.PHONY : thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Include target in all.
+all: thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 0
+.PHONY : thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+.PHONY : gmock_main
+
+# clean rule for target.
+thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) -f thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+# clean rule for target.
+clean: thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target thirdparty/googletest/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/all:
+	$(MAKE) -f thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\build.make thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) -f thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\build.make thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=6,7,8 "Built target gmock"
+.PHONY : thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/all
+
+# Include target in all.
+all: thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 3
+	$(MAKE) -f CMakeFiles\Makefile2 thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 0
+.PHONY : thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/rule
+
+.PHONY : gmock
+
+# clean rule for target.
+thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) -f thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\build.make thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/clean
+
+# clean rule for target.
+clean: thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/googletest/googlemock/gtest
+
+# Convenience name for "all" pass in the directory.
+thirdparty/googletest/googlemock/gtest/all: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+thirdparty/googletest/googlemock/gtest/all: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : thirdparty/googletest/googlemock/gtest/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/googletest/googlemock/gtest/clean: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+thirdparty/googletest/googlemock/gtest/clean: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+.PHONY : thirdparty/googletest/googlemock/gtest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/googletest/googlemock/gtest/preinstall:
+
+.PHONY : thirdparty/googletest/googlemock/gtest/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f thirdparty\googletest\googlemock\gtest\CMakeFiles\gtest.dir\build.make thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f thirdparty\googletest\googlemock\gtest\CMakeFiles\gtest.dir\build.make thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=13,14 "Built target gtest"
+.PHONY : thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+# Include target in all.
+all: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 0
+.PHONY : thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f thirdparty\googletest\googlemock\gtest\CMakeFiles\gtest.dir\build.make thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+.PHONY : thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+# clean rule for target.
+clean: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f thirdparty\googletest\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f thirdparty\googletest\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=15,16 "Built target gtest_main"
+.PHONY : thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+# Include target in all.
+all: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 0
+.PHONY : thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f thirdparty\googletest\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+.PHONY : thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+# clean rule for target.
+clean: thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glm
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glm/all: thirdparty/glm/glm/all
+thirdparty/glm/all: thirdparty/glm/test/all
+
+.PHONY : thirdparty/glm/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glm/clean: thirdparty/glm/glm/clean
+thirdparty/glm/clean: thirdparty/glm/test/clean
+
+.PHONY : thirdparty/glm/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glm/preinstall: thirdparty/glm/glm/preinstall
+thirdparty/glm/preinstall: thirdparty/glm/test/preinstall
+
+.PHONY : thirdparty/glm/preinstall
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glm/glm
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glm/glm/all: thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/all
+
+.PHONY : thirdparty/glm/glm/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glm/glm/clean: thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/clean
+
+.PHONY : thirdparty/glm/glm/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glm/glm/preinstall:
+
+.PHONY : thirdparty/glm/glm/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/glm/glm/CMakeFiles/glm_dummy.dir
+
+# All Build rule for target.
+thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/all:
+	$(MAKE) -f thirdparty\glm\glm\CMakeFiles\glm_dummy.dir\build.make thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/depend
+	$(MAKE) -f thirdparty\glm\glm\CMakeFiles\glm_dummy.dir\build.make thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=3,4,5 "Built target glm_dummy"
+.PHONY : thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/all
+
+# Include target in all.
+all: thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 3
+	$(MAKE) -f CMakeFiles\Makefile2 thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles 0
+.PHONY : thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/rule
+
+# Convenience name for target.
+glm_dummy: thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/rule
+
+.PHONY : glm_dummy
+
+# clean rule for target.
+thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/clean:
+	$(MAKE) -f thirdparty\glm\glm\CMakeFiles\glm_dummy.dir\build.make thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/clean
+.PHONY : thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/clean
+
+# clean rule for target.
+clean: thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glm/test
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glm/test/all: thirdparty/glm/test/bug/all
+thirdparty/glm/test/all: thirdparty/glm/test/core/all
+thirdparty/glm/test/all: thirdparty/glm/test/gtc/all
+thirdparty/glm/test/all: thirdparty/glm/test/gtx/all
+
+.PHONY : thirdparty/glm/test/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glm/test/clean: thirdparty/glm/test/bug/clean
+thirdparty/glm/test/clean: thirdparty/glm/test/core/clean
+thirdparty/glm/test/clean: thirdparty/glm/test/gtc/clean
+thirdparty/glm/test/clean: thirdparty/glm/test/gtx/clean
+
+.PHONY : thirdparty/glm/test/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glm/test/preinstall: thirdparty/glm/test/bug/preinstall
+thirdparty/glm/test/preinstall: thirdparty/glm/test/core/preinstall
+thirdparty/glm/test/preinstall: thirdparty/glm/test/gtc/preinstall
+thirdparty/glm/test/preinstall: thirdparty/glm/test/gtx/preinstall
+
+.PHONY : thirdparty/glm/test/preinstall
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glm/test/bug
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glm/test/bug/all:
+
+.PHONY : thirdparty/glm/test/bug/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glm/test/bug/clean:
+
+.PHONY : thirdparty/glm/test/bug/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glm/test/bug/preinstall:
+
+.PHONY : thirdparty/glm/test/bug/preinstall
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glm/test/core
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glm/test/core/all:
+
+.PHONY : thirdparty/glm/test/core/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glm/test/core/clean:
+
+.PHONY : thirdparty/glm/test/core/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glm/test/core/preinstall:
+
+.PHONY : thirdparty/glm/test/core/preinstall
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glm/test/gtc
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glm/test/gtc/all:
+
+.PHONY : thirdparty/glm/test/gtc/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glm/test/gtc/clean:
+
+.PHONY : thirdparty/glm/test/gtc/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glm/test/gtc/preinstall:
+
+.PHONY : thirdparty/glm/test/gtc/preinstall
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glm/test/gtx
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glm/test/gtx/all:
+
+.PHONY : thirdparty/glm/test/gtx/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glm/test/gtx/clean:
+
+.PHONY : thirdparty/glm/test/gtx/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glm/test/gtx/preinstall:
+
+.PHONY : thirdparty/glm/test/gtx/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

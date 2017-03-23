@@ -81,17 +81,44 @@ WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Window.cpp.obj.provides: Win
 WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Window.cpp.obj.provides.build: WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Window.cpp.obj
 
 
+WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj: WindowSystem/CMakeFiles/libWindowSystem.dir/flags.make
+WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj: WindowSystem/CMakeFiles/libWindowSystem.dir/includes_CXX.rsp
+WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj: ../WindowSystem/Private/Log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj"
+	cd /d D:\WORKSPACE\C++\Daytona\cmake-build-release\WindowSystem && D:\MinGW64\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\libWindowSystem.dir\Private\Log.cpp.obj -c D:\WORKSPACE\C++\Daytona\WindowSystem\Private\Log.cpp
+
+WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libWindowSystem.dir/Private/Log.cpp.i"
+	cd /d D:\WORKSPACE\C++\Daytona\cmake-build-release\WindowSystem && D:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\WORKSPACE\C++\Daytona\WindowSystem\Private\Log.cpp > CMakeFiles\libWindowSystem.dir\Private\Log.cpp.i
+
+WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libWindowSystem.dir/Private/Log.cpp.s"
+	cd /d D:\WORKSPACE\C++\Daytona\cmake-build-release\WindowSystem && D:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\WORKSPACE\C++\Daytona\WindowSystem\Private\Log.cpp -o CMakeFiles\libWindowSystem.dir\Private\Log.cpp.s
+
+WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj.requires:
+
+.PHONY : WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj.requires
+
+WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj.provides: WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj.requires
+	$(MAKE) -f WindowSystem\CMakeFiles\libWindowSystem.dir\build.make WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj.provides.build
+.PHONY : WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj.provides
+
+WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj.provides.build: WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj
+
+
 # Object files for target libWindowSystem
 libWindowSystem_OBJECTS = \
-"CMakeFiles/libWindowSystem.dir/Private/Window.cpp.obj"
+"CMakeFiles/libWindowSystem.dir/Private/Window.cpp.obj" \
+"CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj"
 
 # External object files for target libWindowSystem
 libWindowSystem_EXTERNAL_OBJECTS =
 
 WindowSystem/liblibWindowSystem.a: WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Window.cpp.obj
+WindowSystem/liblibWindowSystem.a: WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj
 WindowSystem/liblibWindowSystem.a: WindowSystem/CMakeFiles/libWindowSystem.dir/build.make
 WindowSystem/liblibWindowSystem.a: WindowSystem/CMakeFiles/libWindowSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblibWindowSystem.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\WORKSPACE\C++\Daytona\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library liblibWindowSystem.a"
 	cd /d D:\WORKSPACE\C++\Daytona\cmake-build-release\WindowSystem && $(CMAKE_COMMAND) -P CMakeFiles\libWindowSystem.dir\cmake_clean_target.cmake
 	cd /d D:\WORKSPACE\C++\Daytona\cmake-build-release\WindowSystem && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\libWindowSystem.dir\link.txt --verbose=$(VERBOSE)
 
@@ -101,6 +128,7 @@ WindowSystem/CMakeFiles/libWindowSystem.dir/build: WindowSystem/liblibWindowSyst
 .PHONY : WindowSystem/CMakeFiles/libWindowSystem.dir/build
 
 WindowSystem/CMakeFiles/libWindowSystem.dir/requires: WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Window.cpp.obj.requires
+WindowSystem/CMakeFiles/libWindowSystem.dir/requires: WindowSystem/CMakeFiles/libWindowSystem.dir/Private/Log.cpp.obj.requires
 
 .PHONY : WindowSystem/CMakeFiles/libWindowSystem.dir/requires
 
