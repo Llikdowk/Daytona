@@ -1,0 +1,3 @@
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\Daytona.dir/objects.a
+D:\MinGW64\bin\ar.exe cr CMakeFiles\Daytona.dir/objects.a @CMakeFiles\Daytona.dir\objects1.rsp
+D:\MinGW64\bin\g++.exe  -g -Wall -Wextra -O3 -DNDEBUG   -Wl,--whole-archive CMakeFiles\Daytona.dir/objects.a -Wl,--no-whole-archive  -o Daytona.exe -Wl,--out-implib,libDaytona.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Daytona.dir\linklibs.rsp

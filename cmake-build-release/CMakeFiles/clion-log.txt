@@ -1,0 +1,6 @@
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - MinGW Makefiles" D:\WORKSPACE\C++\Daytona
+<FindSDL2.cmake>
+</FindSDL2.cmake>
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/WORKSPACE/C++/Daytona/cmake-build-release

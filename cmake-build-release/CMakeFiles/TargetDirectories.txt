@@ -1,0 +1,6 @@
+D:/WORKSPACE/C++/Daytona/cmake-build-release/CMakeFiles/rebuild_cache.dir
+D:/WORKSPACE/C++/Daytona/cmake-build-release/CMakeFiles/Daytona.dir
+D:/WORKSPACE/C++/Daytona/cmake-build-release/CMakeFiles/edit_cache.dir
+D:/WORKSPACE/C++/Daytona/cmake-build-release/WindowSystem/CMakeFiles/libWindowSystem.dir
+D:/WORKSPACE/C++/Daytona/cmake-build-release/WindowSystem/CMakeFiles/edit_cache.dir
+D:/WORKSPACE/C++/Daytona/cmake-build-release/WindowSystem/CMakeFiles/rebuild_cache.dir
