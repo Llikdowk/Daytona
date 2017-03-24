@@ -1,9 +1,8 @@
-project(src)
-
+project(Daytona)
 add_subdirectory(WindowSystem)
-#find_package(OpenGL REQUIRED)
+add_subdirectory(GraphicsEngine)
 
-include_directories(WindowSystem/Public)
 set(SOURCE_FILES EntryPoint.cpp)
 add_executable(Daytona ${SOURCE_FILES})
-target_link_libraries(Daytona libWindowSystem)
+target_link_libraries(Daytona libGraphicsEngine)
+target_link_libraries(Daytona libWindowSystem) # redirects std::out,err to custom locations
