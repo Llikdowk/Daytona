@@ -1,2 +1,0 @@
-# Hashes of file build rules.
-cbe81090159b895bcdb04ac510c924a9 thirdparty/SDL2-2.0.5/CMakeFiles/uninstall
