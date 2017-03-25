@@ -42,6 +42,9 @@
 # Added a search for threads which is needed by some platforms.
 # Added needed compile switches for MinGW.
 #
+# Modified by Guillermo Ferrando for this project.
+# Changed paths to work with this project (env variables and global paths have been deleted).
+#
 # On OSX, this will prefer the Framework version (if found) over others.
 # People will have to manually change the cache values of
 # SDL2_LIBRARY to override this selection or set the CMake environment
@@ -69,31 +72,17 @@ message("<FindSDL2.cmake>")
 
 
 SET(SDL2_SEARCH_PATHS
-	~/Library/Frameworks
-	/Library/Frameworks
-	/usr/local
-	/usr
-	/sw # Fink
-	/opt/local # DarwinPorts
-	/opt/csw # Blastwave
-	/opt
-	${SDL2_PATH}
+	${CMAKE_BINARY_DIR}/thirdparty/SDL2-2.0.5
 )
+SET(SDL2_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/thirdparty/SDL2-2.0.5/include)
 
-FIND_PATH(SDL2_INCLUDE_DIR SDL.h
-	HINTS
-	$ENV{SDL2DIR}
-	PATH_SUFFIXES include/SDL2 include
-	PATHS ${SDL2_SEARCH_PATHS}
-)
 
 FIND_LIBRARY(SDL2_LIBRARY_TEMP
 	NAMES SDL2
 	HINTS
-	$ENV{SDL2DIR}
-	PATH_SUFFIXES lib64 lib lib/x64 lib/x86
 	PATHS ${SDL2_SEARCH_PATHS}
 )
+
 
 IF(NOT SDL2_BUILDING_LIBRARY)
 	IF(NOT ${SDL2_INCLUDE_DIR} MATCHES ".framework")
@@ -104,8 +93,6 @@ IF(NOT SDL2_BUILDING_LIBRARY)
 		FIND_LIBRARY(SDL2MAIN_LIBRARY
 			NAMES SDL2main
 			HINTS
-			$ENV{SDL2DIR}
-			PATH_SUFFIXES lib64 lib lib/x64 lib/x86
 			PATHS ${SDL2_SEARCH_PATHS}
 		)
 	ENDIF(NOT ${SDL2_INCLUDE_DIR} MATCHES ".framework")
@@ -164,5 +151,4 @@ ENDIF(SDL2_LIBRARY_TEMP)
 message("</FindSDL2.cmake>")
 
 INCLUDE(FindPackageHandleStandardArgs)
-
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(SDL2 REQUIRED_VARS SDL2_LIBRARY SDL2_INCLUDE_DIR)

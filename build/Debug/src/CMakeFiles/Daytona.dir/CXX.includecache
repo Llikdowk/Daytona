@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../src/windows/src/Public/Log.h
+SDL2/SDL.h
+-
+
+../../src/windows/src/Public/Window.h
+
+D:/WORKSPACE/C++/Daytona/src/EntryPoint.cpp
+Window.h
+D:/WORKSPACE/C++/Daytona/src/Window.h
+Log.h
+D:/WORKSPACE/C++/Daytona/src/Log.h
+

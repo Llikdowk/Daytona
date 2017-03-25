@@ -1,0 +1,1 @@
+windows/liblib_windows.a -mwindows -lmingw32 ../thirdparty/SDL2-2.0.5/libSDL2main.a -lmingw32 ../thirdparty/SDL2-2.0.5/libSDL2main.a D:/MinGW64/bin/SDL2.dll -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

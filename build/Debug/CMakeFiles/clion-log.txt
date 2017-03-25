@@ -1,0 +1,104 @@
+"C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DVIDEO_OPENGLES=0 -G "CodeBlocks - MinGW Makefiles" D:\WORKSPACE\C++\Daytona
+<SDL2>
+-- 0.4.1 :: 4 :: 1 :: 4 :: 2.0
+-- 
+-- SDL2 was configured with the following options:
+-- 
+-- Platform: Windows-10.0.14393
+-- 64-bit:   TRUE
+-- Compiler: D:/MinGW64/bin/gcc.exe
+-- 
+-- Subsystems:
+--   Atomic:	ON
+--   Audio:	ON
+--   Video:	ON
+--   Render:	ON
+--   Events:	ON
+--   Joystick:	ON
+--   Haptic:	ON
+--   Power:	ON
+--   Threads:	ON
+--   Timers:	ON
+--   File:	ON
+--   Loadso:	ON
+--   CPUinfo:	ON
+--   Filesystem:	ON
+--   Dlopen:	ON
+-- 
+-- Options:
+--   3DNOW                  (Wanted: ON): ON
+--   ALSA                   (Wanted: OFF): OFF
+--   ALSA_SHARED            (Wanted: OFF): OFF
+--   ALTIVEC                (Wanted: ON): OFF
+--   ARTS                   (Wanted: OFF): OFF
+--   ARTS_SHARED            (Wanted: OFF): OFF
+--   ASSEMBLY               (Wanted: ON): ON
+--   ASSERTIONS             (Wanted: auto): auto
+--   CLOCK_GETTIME          (Wanted: OFF): OFF
+--   DIRECTFB_SHARED        (Wanted: OFF): OFF
+--   DIRECTX                (Wanted: ON): ON
+--   DISKAUDIO              (Wanted: ON): ON
+--   DUMMYAUDIO             (Wanted: ON): ON
+--   ESD                    (Wanted: OFF): OFF
+--   ESD_SHARED             (Wanted: OFF): OFF
+--   FUSIONSOUND            (Wanted: OFF): OFF
+--   FUSIONSOUND_SHARED     (Wanted: OFF): OFF
+--   GCC_ATOMICS            (Wanted: ON): ON
+--   INPUT_TSLIB            (Wanted: OFF): OFF
+--   LIBC                   (Wanted: ON): ON
+--   MIR_SHARED             (Wanted: OFF): OFF
+--   MMX                    (Wanted: ON): ON
+--   NAS                    (Wanted: OFF): OFF
+--   NAS_SHARED             (Wanted: OFF): OFF
+--   OSS                    (Wanted: OFF): OFF
+--   PTHREADS               (Wanted: OFF): OFF
+--   PTHREADS_SEM           (Wanted: OFF): OFF
+--   PULSEAUDIO             (Wanted: OFF): OFF
+--   PULSEAUDIO_SHARED      (Wanted: OFF): OFF
+--   RENDER_D3D             (Wanted: ON): ON
+--   RPATH                  (Wanted: OFF): OFF
+--   SDL_DLOPEN             (Wanted: ON): OFF
+--   SDL_STATIC_PIC         (Wanted: OFF): OFF
+--   SNDIO                  (Wanted: OFF): OFF
+--   SSE                    (Wanted: ON): ON
+--   SSE2                   (Wanted: ON): ON
+--   SSEMATH                (Wanted: ON): ON
+--   VIDEO_COCOA            (Wanted: OFF): OFF
+--   VIDEO_DIRECTFB         (Wanted: OFF): OFF
+--   VIDEO_DUMMY            (Wanted: ON): ON
+--   VIDEO_MIR              (Wanted: OFF): OFF
+--   VIDEO_OPENGL           (Wanted: ON): ON
+--   VIDEO_OPENGLES         (Wanted: 0): OFF
+--   VIDEO_RPI              (Wanted: OFF): OFF
+--   VIDEO_VIVANTE          (Wanted: OFF): OFF
+--   VIDEO_WAYLAND          (Wanted: OFF): OFF
+--   VIDEO_WAYLAND_QT_TOUCH (Wanted: OFF): OFF
+--   VIDEO_X11              (Wanted: OFF): OFF
+--   VIDEO_X11_XCURSOR      (Wanted: OFF): OFF
+--   VIDEO_X11_XINERAMA     (Wanted: OFF): OFF
+--   VIDEO_X11_XINPUT       (Wanted: OFF): OFF
+--   VIDEO_X11_XRANDR       (Wanted: OFF): OFF
+--   VIDEO_X11_XSCRNSAVER   (Wanted: OFF): OFF
+--   VIDEO_X11_XSHAPE       (Wanted: OFF): OFF
+--   VIDEO_X11_XVM          (Wanted: OFF): OFF
+--   WAYLAND_SHARED         (Wanted: OFF): OFF
+--   X11_SHARED             (Wanted: OFF): OFF
+-- 
+--  CFLAGS:        
+--  EXTRA_CFLAGS:  -mfpmath=387 -msse2 -msse -m3dnow -mmmx -Wshadow -fvisibility=hidden -Wdeclaration-after-statement -Werror=declaration-after-statement -Wall 
+--  EXTRA_LDFLAGS: -Wl,--no-undefined;-mwindows
+--  EXTRA_LIBS:    m;iconv;user32;gdi32;winmm;imm32;ole32;oleaut32;version;uuid;dinput8;dxerr8;mingw32
+-- 
+--  Build Shared Library: ON
+--  Build Static Library: ON
+--  Build Static Library with Position Independent Code: OFF
+-- 
+</SDL2>
+<src>
+<FindSDL2.cmake>
+</FindSDL2.cmake>
+-- Found SDL2: mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;D:/MinGW64/bin/SDL2.dll  
+</src>
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/WORKSPACE/C++/Daytona/build/Debug
