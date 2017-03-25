@@ -29,6 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("D:/WORKSPACE/C++/Daytona/build/Debug/src/graphics/cmake_install.cmake")
   include("D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/cmake_install.cmake")
 
 endif()

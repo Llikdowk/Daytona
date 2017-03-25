@@ -5,7 +5,7 @@
 		<Option title="windows"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\windows\;CMake Files\cmake\;CMake Files\thirdparty\;CMake Files\thirdparty\SDL2-2.0.5\;CMake Files\thirdparty\SDL2-2.0.5\cmake\;CMake Files\thirdparty\SDL2-2.0.5\include\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\graphics\;CMake Files\src\windows\;CMake Files\build\;CMake Files\build\Debug\;CMake Files\build\Debug\thirdparty\;CMake Files\build\Debug\thirdparty\glm\;CMake Files\cmake\;CMake Files\thirdparty\;CMake Files\thirdparty\SDL2-2.0.5\;CMake Files\thirdparty\SDL2-2.0.5\cmake\;CMake Files\thirdparty\SDL2-2.0.5\include\;CMake Files\thirdparty\glm\;CMake Files\thirdparty\glm\cmake\;CMake Files\thirdparty\glm\glm\;CMake Files\thirdparty\glm\test\;CMake Files\thirdparty\glm\test\bug\;CMake Files\thirdparty\glm\test\core\;CMake Files\thirdparty\glm\test\gtc\;CMake Files\thirdparty\glm\test\gtx\;CMake Files\thirdparty\googletest\;CMake Files\thirdparty\googletest\googlemock\;CMake Files\thirdparty\googletest\googletest\;CMake Files\thirdparty\googletest\googletest\cmake\;CMake Files\test\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/src/windows"/>
@@ -17,8 +17,8 @@
 					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="lib_windows">
-				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/liblib_windows.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="_windows">
+				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/lib_windows.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/src/windows"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -35,14 +35,14 @@
 					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 lib_windows"/>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 _windows"/>
 					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="lib_windows/fast">
-				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/liblib_windows.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="_windows/fast">
+				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/lib_windows.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/src/windows"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -59,7 +59,7 @@
 					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 lib_windows/fast"/>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 _windows/fast"/>
 					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/src/windows/Makefile&quot;  VERBOSE=1 clean"/>
@@ -67,13 +67,13 @@
 			</Target>
 		</Build>
 		<Unit filename="D:/WORKSPACE/C++/Daytona/src/windows/src/Private/Window.cpp">
-			<Option target="lib_windows"/>
+			<Option target="_windows"/>
 		</Unit>
 		<Unit filename="D:/WORKSPACE/C++/Daytona/src/windows/src/Public/Log.h">
-			<Option target="lib_windows"/>
+			<Option target="_windows"/>
 		</Unit>
 		<Unit filename="D:/WORKSPACE/C++/Daytona/src/windows/src/Public/Window.h">
-			<Option target="lib_windows"/>
+			<Option target="_windows"/>
 		</Unit>
 		<Unit filename="D:/WORKSPACE/C++/Daytona/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -84,14 +84,50 @@
 		<Unit filename="D:/WORKSPACE/C++/Daytona/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
-		<Unit filename="D:/WORKSPACE/C++/Daytona/src/windows/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\src\windows\"/>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/graphics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\graphics\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/graphics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\graphics\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/graphics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\graphics\"/>
 		</Unit>
 		<Unit filename="D:/WORKSPACE/C++/Daytona/src/windows/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\windows\"/>
 		</Unit>
 		<Unit filename="D:/WORKSPACE/C++/Daytona/src/windows/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\windows\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/windows/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\windows\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfig.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmTargets.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfig.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmTargets.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfig.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmTargets.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
 		</Unit>
 		<Unit filename="D:/WORKSPACE/C++/Daytona/cmake/FindSDL2.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
@@ -134,6 +170,123 @@
 		</Unit>
 		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/include/SDL_config.h.cmake">
 			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\include\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/GNUInstallDirs.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/CMakePackageConfigHelpers.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glmBuildConfig.cmake.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glmConfig.cmake.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glm.pc.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/GNUInstallDirs.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/CMakePackageConfigHelpers.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glmBuildConfig.cmake.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glmConfig.cmake.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glm.pc.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/bug/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\bug\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/bug/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\bug\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\core\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\core\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/gtc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\gtc\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/gtc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\gtc\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/gtx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\gtx\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/gtx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\gtx\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

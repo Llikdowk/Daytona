@@ -154,19 +154,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/graphics/CMakeFiles/lib_graphics.dir/rule:
-	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f CMakeFiles\Makefile2 src/graphics/CMakeFiles/lib_graphics.dir/rule
-.PHONY : src/graphics/CMakeFiles/lib_graphics.dir/rule
+src/graphics/CMakeFiles/_graphics.dir/rule:
+	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f CMakeFiles\Makefile2 src/graphics/CMakeFiles/_graphics.dir/rule
+.PHONY : src/graphics/CMakeFiles/_graphics.dir/rule
 
 # Convenience name for target.
-lib_graphics: src/graphics/CMakeFiles/lib_graphics.dir/rule
+_graphics: src/graphics/CMakeFiles/_graphics.dir/rule
 
-.PHONY : lib_graphics
+.PHONY : _graphics
 
 # fast build rule for target.
-lib_graphics/fast:
-	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\graphics\CMakeFiles\lib_graphics.dir\build.make src/graphics/CMakeFiles/lib_graphics.dir/build
-.PHONY : lib_graphics/fast
+_graphics/fast:
+	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\graphics\CMakeFiles\_graphics.dir\build.make src/graphics/CMakeFiles/_graphics.dir/build
+.PHONY : _graphics/fast
 
 src/Private/Test.obj: src/Private/Test.cpp.obj
 
@@ -174,7 +174,7 @@ src/Private/Test.obj: src/Private/Test.cpp.obj
 
 # target to build an object file
 src/Private/Test.cpp.obj:
-	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\graphics\CMakeFiles\lib_graphics.dir\build.make src/graphics/CMakeFiles/lib_graphics.dir/src/Private/Test.cpp.obj
+	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\graphics\CMakeFiles\_graphics.dir\build.make src/graphics/CMakeFiles/_graphics.dir/src/Private/Test.cpp.obj
 .PHONY : src/Private/Test.cpp.obj
 
 src/Private/Test.i: src/Private/Test.cpp.i
@@ -183,7 +183,7 @@ src/Private/Test.i: src/Private/Test.cpp.i
 
 # target to preprocess a source file
 src/Private/Test.cpp.i:
-	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\graphics\CMakeFiles\lib_graphics.dir\build.make src/graphics/CMakeFiles/lib_graphics.dir/src/Private/Test.cpp.i
+	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\graphics\CMakeFiles\_graphics.dir\build.make src/graphics/CMakeFiles/_graphics.dir/src/Private/Test.cpp.i
 .PHONY : src/Private/Test.cpp.i
 
 src/Private/Test.s: src/Private/Test.cpp.s
@@ -192,7 +192,7 @@ src/Private/Test.s: src/Private/Test.cpp.s
 
 # target to generate assembly for a file
 src/Private/Test.cpp.s:
-	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\graphics\CMakeFiles\lib_graphics.dir\build.make src/graphics/CMakeFiles/lib_graphics.dir/src/Private/Test.cpp.s
+	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\graphics\CMakeFiles\_graphics.dir\build.make src/graphics/CMakeFiles/_graphics.dir/src/Private/Test.cpp.s
 .PHONY : src/Private/Test.cpp.s
 
 # Help Target
@@ -201,7 +201,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... lib_graphics
+	@echo ... _graphics
 	@echo ... edit_cache
 	@echo ... install
 	@echo ... install/local

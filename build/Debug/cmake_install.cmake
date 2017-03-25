@@ -30,7 +30,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/cmake_install.cmake")
+  include("D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/cmake_install.cmake")
+  include("D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/cmake_install.cmake")
   include("D:/WORKSPACE/C++/Daytona/build/Debug/src/cmake_install.cmake")
+  include("D:/WORKSPACE/C++/Daytona/build/Debug/test/cmake_install.cmake")
 
 endif()
 

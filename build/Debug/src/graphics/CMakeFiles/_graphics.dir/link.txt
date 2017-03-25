@@ -1,0 +1,2 @@
+D:\MinGW64\bin\ar.exe qc lib_graphics.a  CMakeFiles/_graphics.dir/src/Private/Test.cpp.obj
+D:\MinGW64\bin\ranlib.exe lib_graphics.a

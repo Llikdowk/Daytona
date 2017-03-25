@@ -55,16 +55,6 @@ CMAKE_BINARY_DIR = D:\WORKSPACE\C++\Daytona\build\Debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -110,6 +100,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -154,19 +154,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/windows/CMakeFiles/lib_windows.dir/rule:
-	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f CMakeFiles\Makefile2 src/windows/CMakeFiles/lib_windows.dir/rule
-.PHONY : src/windows/CMakeFiles/lib_windows.dir/rule
+src/windows/CMakeFiles/_windows.dir/rule:
+	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f CMakeFiles\Makefile2 src/windows/CMakeFiles/_windows.dir/rule
+.PHONY : src/windows/CMakeFiles/_windows.dir/rule
 
 # Convenience name for target.
-lib_windows: src/windows/CMakeFiles/lib_windows.dir/rule
+_windows: src/windows/CMakeFiles/_windows.dir/rule
 
-.PHONY : lib_windows
+.PHONY : _windows
 
 # fast build rule for target.
-lib_windows/fast:
-	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\windows\CMakeFiles\lib_windows.dir\build.make src/windows/CMakeFiles/lib_windows.dir/build
-.PHONY : lib_windows/fast
+_windows/fast:
+	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\windows\CMakeFiles\_windows.dir\build.make src/windows/CMakeFiles/_windows.dir/build
+.PHONY : _windows/fast
 
 src/Private/Window.obj: src/Private/Window.cpp.obj
 
@@ -174,7 +174,7 @@ src/Private/Window.obj: src/Private/Window.cpp.obj
 
 # target to build an object file
 src/Private/Window.cpp.obj:
-	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\windows\CMakeFiles\lib_windows.dir\build.make src/windows/CMakeFiles/lib_windows.dir/src/Private/Window.cpp.obj
+	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\windows\CMakeFiles\_windows.dir\build.make src/windows/CMakeFiles/_windows.dir/src/Private/Window.cpp.obj
 .PHONY : src/Private/Window.cpp.obj
 
 src/Private/Window.i: src/Private/Window.cpp.i
@@ -183,7 +183,7 @@ src/Private/Window.i: src/Private/Window.cpp.i
 
 # target to preprocess a source file
 src/Private/Window.cpp.i:
-	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\windows\CMakeFiles\lib_windows.dir\build.make src/windows/CMakeFiles/lib_windows.dir/src/Private/Window.cpp.i
+	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\windows\CMakeFiles\_windows.dir\build.make src/windows/CMakeFiles/_windows.dir/src/Private/Window.cpp.i
 .PHONY : src/Private/Window.cpp.i
 
 src/Private/Window.s: src/Private/Window.cpp.s
@@ -192,7 +192,7 @@ src/Private/Window.s: src/Private/Window.cpp.s
 
 # target to generate assembly for a file
 src/Private/Window.cpp.s:
-	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\windows\CMakeFiles\lib_windows.dir\build.make src/windows/CMakeFiles/lib_windows.dir/src/Private/Window.cpp.s
+	cd /d D:\WORKSPACE\C++\Daytona\build\Debug && $(MAKE) -f src\windows\CMakeFiles\_windows.dir\build.make src/windows/CMakeFiles/_windows.dir/src/Private/Window.cpp.s
 .PHONY : src/Private/Window.cpp.s
 
 # Help Target
@@ -201,12 +201,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... list_install_components
-	@echo ... lib_windows
+	@echo ... _windows
 	@echo ... edit_cache
 	@echo ... install
 	@echo ... install/local
 	@echo ... rebuild_cache
+	@echo ... list_install_components
 	@echo ... install/strip
 	@echo ... src/Private/Window.obj
 	@echo ... src/Private/Window.i

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="gmock"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\graphics\;CMake Files\src\windows\;CMake Files\build\;CMake Files\build\Debug\;CMake Files\build\Debug\thirdparty\;CMake Files\build\Debug\thirdparty\glm\;CMake Files\cmake\;CMake Files\thirdparty\;CMake Files\thirdparty\SDL2-2.0.5\;CMake Files\thirdparty\SDL2-2.0.5\cmake\;CMake Files\thirdparty\SDL2-2.0.5\include\;CMake Files\thirdparty\glm\;CMake Files\thirdparty\glm\cmake\;CMake Files\thirdparty\glm\glm\;CMake Files\thirdparty\glm\test\;CMake Files\thirdparty\glm\test\bug\;CMake Files\thirdparty\glm\test\core\;CMake Files\thirdparty\glm\test\gtc\;CMake Files\thirdparty\glm\test\gtx\;CMake Files\thirdparty\googletest\;CMake Files\thirdparty\googletest\googlemock\;CMake Files\thirdparty\googletest\googletest\;CMake Files\thirdparty\googletest\googletest\cmake\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest"/>
+					<Add directory="D:/MinGW64/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest"/>
+					<Add directory="D:/MinGW64/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest"/>
+					<Add directory="D:/MinGW64/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest"/>
+					<Add directory="D:/MinGW64/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest"/>
+					<Add directory="D:/MinGW64/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest"/>
+					<Add directory="D:/MinGW64/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest"/>
+					<Add directory="D:/MinGW64/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/include"/>
+					<Add directory="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest"/>
+					<Add directory="D:/MinGW64/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="d:\mingw64\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/src/gmock-all.cc">
+			<Option target="gmock_main"/>
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/src/gtest-all.cc">
+			<Option target="gmock_main"/>
+			<Option target="gmock"/>
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/graphics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\graphics\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/graphics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\graphics\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/graphics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\graphics\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/windows/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\windows\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/windows/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\windows\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/src/windows/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\windows\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfig.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmTargets.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfig.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmTargets.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmConfig.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm/glmTargets.cmake">
+			<Option virtualFolder="CMake Files\build\Debug\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/cmake/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/cmake/utils.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/cmake/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/cmake/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/cmake/macros.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/cmake/sdlchecks.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/cmake/macros.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/cmake/sdlchecks.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/include/SDL_config.h.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\include\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/include/SDL_config.h.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\SDL2-2.0.5\include\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/GNUInstallDirs.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/CMakePackageConfigHelpers.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glmBuildConfig.cmake.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glmConfig.cmake.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glm.pc.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/GNUInstallDirs.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/CMakePackageConfigHelpers.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glmBuildConfig.cmake.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glmConfig.cmake.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/cmake/glm.pc.in">
+			<Option virtualFolder="CMake Files\thirdparty\glm\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\glm\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/bug/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\bug\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/bug/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\bug\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\core\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\core\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/gtc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\gtc\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/gtc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\gtc\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/gtx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\gtx\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/glm/test/gtx/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\glm\test\gtx\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\thirdparty\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="D:/WORKSPACE/C++/Daytona/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -90,7 +90,8 @@ Daytona_EXTERNAL_OBJECTS =
 
 src/Daytona.exe: src/CMakeFiles/Daytona.dir/EntryPoint.cpp.obj
 src/Daytona.exe: src/CMakeFiles/Daytona.dir/build.make
-src/Daytona.exe: src/windows/liblib_windows.a
+src/Daytona.exe: src/graphics/lib_graphics.a
+src/Daytona.exe: src/windows/lib_windows.a
 src/Daytona.exe: thirdparty/SDL2-2.0.5/libSDL2main.a
 src/Daytona.exe: thirdparty/SDL2-2.0.5/libSDL2main.a
 src/Daytona.exe: D:/MinGW64/bin/SDL2.dll

@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../../src/graphics/src/Public/Test.h
+
 ../../src/windows/src/Public/Log.h
 SDL2/SDL.h
 -
@@ -17,4 +19,6 @@ Window.h
 D:/WORKSPACE/C++/Daytona/src/Window.h
 Log.h
 D:/WORKSPACE/C++/Daytona/src/Log.h
+Test.h
+-
 

@@ -1,5 +1,6 @@
 "C:\Program Files (x86)\JetBrains\CLion 2016.3.4\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DVIDEO_OPENGLES=0 -G "CodeBlocks - MinGW Makefiles" D:\WORKSPACE\C++\Daytona
-<SDL2>
+<thirdparty>
+<SDL>
 -- 0.4.1 :: 4 :: 1 :: 4 :: 2.0
 -- 
 -- SDL2 was configured with the following options:
@@ -93,12 +94,20 @@
 --  Build Static Library: ON
 --  Build Static Library with Position Independent Code: OFF
 -- 
-</SDL2>
+</SDL>
+<GLM>
+-- GLM is a header only library, no need to build it. Set the option GLM_TEST_ENABLE with ON to build and run the test bench
+-- GLM CXX_11 ENABLED
+</GLM>
+<googletest>
+</googletest>
+</thirdparty>
 <src>
 <FindSDL2.cmake>
 </FindSDL2.cmake>
--- Found SDL2: mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;D:/MinGW64/bin/SDL2.dll  
 </src>
+<test>
+</test>
 -- Configuring done
 -- Generating done
 -- Build files have been written to: D:/WORKSPACE/C++/Daytona/build/Debug

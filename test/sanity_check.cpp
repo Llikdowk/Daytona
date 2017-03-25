@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 
-TEST(SanityCheck, one) {
+TEST(sanity_check, one) {
     EXPECT_EQ(1, 1);
 }
 
-TEST(SanityCheck, fail) {
+TEST(sanity_check, fail) {
     EXPECT_EQ(0, 1);
 }

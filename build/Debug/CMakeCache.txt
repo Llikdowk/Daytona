@@ -32,6 +32,15 @@ ASSEMBLY:BOOL=ON
 //Enable internal sanity checks (auto/disabled/release/enabled/paranoid)
 ASSERTIONS:STRING=auto
 
+//Builds the googlemock subproject
+BUILD_GMOCK:BOOL=ON
+
+//Builds the googletest subproject
+BUILD_GTEST:BOOL=OFF
+
+//Build shared libraries (DLLs).
+BUILD_SHARED_LIBS:BOOL=OFF
+
 //Use clock_gettime() instead of gettimeofday()
 CLOCK_GETTIME:BOOL=OFF
 
@@ -268,6 +277,9 @@ Daytona_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/build/Debug/src
 //Value Computed by CMake
 Daytona_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/src
 
+//enable testing
+ENABLE_TEST:BOOL=ON
+
 //Support the Enlightened Sound Daemon
 ESD:BOOL=OFF
 
@@ -276,6 +288,57 @@ FUSIONSOUND:BOOL=OFF
 
 //Use gcc builtin atomics
 GCC_ATOMICS:BOOL=ON
+
+//GLM dynamic library
+GLM_DYNAMIC_LIBRARY_ENABLE:BOOL=OFF
+
+//GLM install
+GLM_INSTALL_ENABLE:BOOL=ON
+
+//GLM static library
+GLM_STATIC_LIBRARY_ENABLE:BOOL=OFF
+
+//GLM test
+GLM_TEST_ENABLE:BOOL=OFF
+
+//Enable C++ 0x
+GLM_TEST_ENABLE_CXX_0X:BOOL=OFF
+
+//Enable C++ 11
+GLM_TEST_ENABLE_CXX_11:BOOL=ON
+
+//Enable C++ 14
+GLM_TEST_ENABLE_CXX_14:BOOL=OFF
+
+//Enable C++ 1y
+GLM_TEST_ENABLE_CXX_1Y:BOOL=OFF
+
+//Enable C++ 1z
+GLM_TEST_ENABLE_CXX_1Z:BOOL=OFF
+
+//Enable C++ 98
+GLM_TEST_ENABLE_CXX_98:BOOL=OFF
+
+//Enable fast math optimizations
+GLM_TEST_ENABLE_FAST_MATH:BOOL=OFF
+
+//Enable language extensions
+GLM_TEST_ENABLE_LANG_EXTENSIONS:BOOL=OFF
+
+//Enable AVX optimizations
+GLM_TEST_ENABLE_SIMD_AVX:BOOL=OFF
+
+//Enable AVX2 optimizations
+GLM_TEST_ENABLE_SIMD_AVX2:BOOL=OFF
+
+//Enable SSE2 optimizations
+GLM_TEST_ENABLE_SIMD_SSE2:BOOL=OFF
+
+//Enable SSE3 optimizations
+GLM_TEST_ENABLE_SIMD_SSE3:BOOL=OFF
+
+//Force 'pure' instructions
+GLM_TEST_FORCE_PURE:BOOL=OFF
 
 //Use the Touchscreen library for input
 INPUT_TSLIB:BOOL=OFF
@@ -306,6 +369,9 @@ PTHREADS:BOOL=OFF
 
 //Use PulseAudio
 PULSEAUDIO:BOOL=OFF
+
+//Path to a program.
+PYTHON_EXECUTABLE:FILEPATH=C:/Users/Llikdowk/AppData/Local/Programs/Python/Python36-32/python.exe
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/build/Debug
@@ -449,6 +515,88 @@ VIDEO_X11:BOOL=OFF
 //Path to a program.
 WINDRES:FILEPATH=D:/MinGW64/bin/windres.exe
 
+//Dependencies for target
+_graphics_LIB_DEPENDS:STATIC=
+
+//Dependencies for the target
+_windows_LIB_DEPENDS:STATIC=general;mingw32;general;-mwindows;general;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;general;mingw32;general;-mwindows;general;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;general;mingw32;general;-mwindows;general;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;general;D:/MinGW64/bin/SDL2.dll;
+
+//Value Computed by CMake
+glm_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm
+
+//The directory containing a CMake configuration file for glm.
+glm_DIR:PATH=D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/glm
+
+//Value Computed by CMake
+glm_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/thirdparty/glm
+
+//Value Computed by CMake
+gmock_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock
+
+//Dependencies for target
+gmock_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+gmock_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googlemock
+
+//Build all of Google Mock's own tests.
+gmock_build_tests:BOOL=OFF
+
+//Dependencies for target
+gmock_main_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+googletest-distribution_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest
+
+//Value Computed by CMake
+googletest-distribution_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/thirdparty/googletest
+
+//Value Computed by CMake
+graphics_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/build/Debug/src/graphics
+
+//Dependencies for target
+graphics_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+graphics_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/src/graphics
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/googletest/googlemock/gtest
+
+//Dependencies for target
+gtest_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+gtest_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/thirdparty/googletest/googletest
+
+//Build gtest's sample programs.
+gtest_build_samples:BOOL=OFF
+
+//Build all of gtest's own tests.
+gtest_build_tests:BOOL=OFF
+
+//Disable uses of pthreads in gtest.
+gtest_disable_pthreads:BOOL=OFF
+
+//Use shared (DLL) run-time lib even when Google Test is built
+// as static lib.
+gtest_force_shared_crt:BOOL=OFF
+
+//Build gtest with internal symbols hidden in shared libraries.
+gtest_hide_internal_symbols:BOOL=OFF
+
+//Dependencies for the target
+gtest_main_LIB_DEPENDS:STATIC=general;gtest;
+
+//Value Computed by CMake
+integration_tests_BINARY_DIR:STATIC=D:/WORKSPACE/C++/Daytona/build/Debug/test
+
+//Value Computed by CMake
+integration_tests_SOURCE_DIR:STATIC=D:/WORKSPACE/C++/Daytona/test
+
+//Dependencies for target
+lib_graphics_LIB_DEPENDS:STATIC=
+
 //Dependencies for the target
 lib_windows_LIB_DEPENDS:STATIC=general;mingw32;general;-mwindows;general;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;general;mingw32;general;-mwindows;general;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;general;mingw32;general;-mwindows;general;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;general;D:/MinGW64/bin/SDL2.dll;
 
@@ -591,7 +739,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -637,6 +785,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[D:/MinGW64/bin/pkg-config.exe][v0.25()]
+//Details about finding PythonInterp
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Users/Llikdowk/AppData/Local/Programs/Python/Python36-32/python.exe][v3.6()]
 //Details about finding SDL2
 FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;D:/MinGW64/bin/SDL2.dll][D:/WORKSPACE/C++/Daytona/thirdparty/SDL2-2.0.5/include][v()]
 //Details about finding Threads
@@ -879,7 +1029,9 @@ HAVE__UITOA:INTERNAL=
 HAVE__ULTOA:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-SDL2_LIBRARY_TEMP:INTERNAL=mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;D:/MinGW64/bin/SDL2.dll
+//ADVANCED property for variable: PYTHON_EXECUTABLE
+PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+SDL2_LIBRARY_TEMP:INTERNAL=mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;mingw32;-mwindows;D:/WORKSPACE/C++/Daytona/build/Debug/thirdparty/SDL2-2.0.5/libSDL2main.a;D:/MinGW64/bin/SDL2.dll
 //CHECK_TYPE_SIZE: sizeof(size_t)
 SIZEOF_SIZE_T:INTERNAL=8
 //Have includes dlfcn.h;stdint.h;stddef.h;inttypes.h;stdlib.h;strings.h;string.h;float.h

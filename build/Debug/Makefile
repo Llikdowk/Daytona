@@ -206,6 +206,71 @@ uninstall/fast:
 .PHONY : uninstall/fast
 
 #=============================================================================
+# Target rules for targets named glm_dummy
+
+# Build rule for target.
+glm_dummy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 glm_dummy
+.PHONY : glm_dummy
+
+# fast build rule for target.
+glm_dummy/fast:
+	$(MAKE) -f thirdparty\glm\glm\CMakeFiles\glm_dummy.dir\build.make thirdparty/glm/glm/CMakeFiles/glm_dummy.dir/build
+.PHONY : glm_dummy/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make thirdparty/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\build.make thirdparty/googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f thirdparty\googletest\googlemock\gtest\CMakeFiles\gtest.dir\build.make thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f thirdparty\googletest\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make thirdparty/googletest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
 # Target rules for targets named Daytona
 
 # Build rule for target.
@@ -219,17 +284,43 @@ Daytona/fast:
 .PHONY : Daytona/fast
 
 #=============================================================================
-# Target rules for targets named lib_windows
+# Target rules for targets named _graphics
 
 # Build rule for target.
-lib_windows: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 lib_windows
-.PHONY : lib_windows
+_graphics: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 _graphics
+.PHONY : _graphics
 
 # fast build rule for target.
-lib_windows/fast:
-	$(MAKE) -f src\windows\CMakeFiles\lib_windows.dir\build.make src/windows/CMakeFiles/lib_windows.dir/build
-.PHONY : lib_windows/fast
+_graphics/fast:
+	$(MAKE) -f src\graphics\CMakeFiles\_graphics.dir\build.make src/graphics/CMakeFiles/_graphics.dir/build
+.PHONY : _graphics/fast
+
+#=============================================================================
+# Target rules for targets named _windows
+
+# Build rule for target.
+_windows: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 _windows
+.PHONY : _windows
+
+# fast build rule for target.
+_windows/fast:
+	$(MAKE) -f src\windows\CMakeFiles\_windows.dir\build.make src/windows/CMakeFiles/_windows.dir/build
+.PHONY : _windows/fast
+
+#=============================================================================
+# Target rules for targets named test_integration
+
+# Build rule for target.
+test_integration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 test_integration
+.PHONY : test_integration
+
+# fast build rule for target.
+test_integration/fast:
+	$(MAKE) -f test\CMakeFiles\test_integration.dir\build.make test/CMakeFiles/test_integration.dir/build
+.PHONY : test_integration/fast
 
 # Help Target
 help:
@@ -247,8 +338,15 @@ help:
 	@echo ... SDL2main
 	@echo ... SDL2
 	@echo ... uninstall
+	@echo ... glm_dummy
+	@echo ... gmock_main
+	@echo ... gmock
+	@echo ... gtest
+	@echo ... gtest_main
 	@echo ... Daytona
-	@echo ... lib_windows
+	@echo ... _graphics
+	@echo ... _windows
+	@echo ... test_integration
 .PHONY : help
 
 

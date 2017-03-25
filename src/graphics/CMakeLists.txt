@@ -1,7 +1,9 @@
 project(graphics)
 
+find_package(glm REQUIRED)
+
 set(SOURCE_FILES src/Public/Test.h src/Private/Test.cpp)
-add_library(lib_graphics ${SOURCE_FILES})
-target_include_directories(lib_graphics PUBLIC include/)
-target_include_directories(lib_graphics PUBLIC src/Public)
+add_library(_graphics ${SOURCE_FILES})
+target_include_directories(_graphics PUBLIC ${GLM_INCLUDE_DIRS})
+target_include_directories(_graphics PUBLIC src/Public)
 
