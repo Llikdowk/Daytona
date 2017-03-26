@@ -1,8 +1,8 @@
 #include "Window.h"
-#include "Log.h"
-#include <SDL2/SDL.h>
-#include <iostream>
+#include <Log.h>
+#include <SDL.h>
 #include <cstdlib>
+#include <iostream>
 
 Window::StaticConstructor::StaticConstructor() {
     if (SDL_Init(SDL_INIT_VIDEO) != 0){

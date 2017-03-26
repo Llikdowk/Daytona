@@ -26,3 +26,4 @@ message("</src>")
 message("<test>")
 add_subdirectory(test)
 message("</test>")
+

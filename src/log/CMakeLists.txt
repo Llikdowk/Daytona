@@ -1,0 +1,6 @@
+project(log)
+find_package(SDL2 REQUIRED)
+add_library(_log STATIC Log.h)
+set_target_properties(_log PROPERTIES LINKER_LANGUAGE CXX)
+target_include_directories(_log INTERFACE ${SDL2_INCLUDE_DIR})
+target_link_libraries(_log ${SDL2_LIBRARY})

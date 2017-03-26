@@ -1,7 +1,6 @@
 #pragma once
-#include <SDL2/SDL.h>
 
-//TODO check pImpl idiom to solve last include issue!
+#include <SDL_log.h>
 
 namespace Log {
     template <typename... Args>

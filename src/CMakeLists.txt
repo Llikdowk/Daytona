@@ -1,5 +1,7 @@
 project(Daytona)
 
+add_subdirectory(log)
+include_directories(log)
 add_subdirectory(graphics)
 add_subdirectory(windows)
 
