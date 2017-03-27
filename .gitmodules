@@ -1,6 +1,9 @@
-[submodule "thirdparty/googletest"]
-	path = thirdparty/googletest
-	url = git@github.com:google/googletest.git
+[submodule "thirdparty/glad"]
+    path = thidrparty/glad
+    url = git@github.com:Dav1dde/glad.git
 [submodule "thirdparty/glm"]
 	path = thirdparty/glm
 	url = git@github.com:g-truc/glm.git
+[submodule "thirdparty/googletest"]
+	path = thirdparty/googletest
+	url = git@github.com:google/googletest.git
