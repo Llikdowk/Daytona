@@ -3,8 +3,6 @@
 struct SDL_Window;
 
 class Window {
-    using Canvas = SDL_Window;
-
     static class StaticConstructor {
     public:
         StaticConstructor();
@@ -16,5 +14,6 @@ public:
     void show();
 
 private:
+    using Canvas = SDL_Window;
     Canvas* canvas;
 };

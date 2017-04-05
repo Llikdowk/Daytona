@@ -3,6 +3,6 @@
 struct SDL_Window;
 
 namespace Error {
-    extern void check(SDL_Window* window);
-    extern void SDL();
+    void check(SDL_Window* window);
+    void SDL();
 }
