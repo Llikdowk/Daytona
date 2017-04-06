@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Shader.h"
+#include "ErrorHandler.h"
 #include <Log.h>
 #include <glad/glad.h>
 
@@ -43,19 +45,33 @@ namespace Renderer {
         glBufferData(GL_ARRAY_BUFFER, sizeof(vertices),
         vertices, GL_STATIC_DRAW);
 
-        ShaderInfo shaders[] = {
-            { GL_VERTEX_SHADER, "triangles.vert" },
-            { GL_FRAGMENT_SHADER, "triangles.frag" },
-            { GL_NONE, NULL }
-        };
-        GLuint program = LoadShaders(shaders);
-        glUseProgram(program);
+        ShaderProgram program;
+        try {
+
+            Shader shader(Shader::Type::Vertex);
+            shader.load("./resources/shaders/triangles/triangles.vert");
+            shader.compile();
+
+            Shader shader2(Shader::Type::Fragment);
+            shader2.load("./resources/shaders/triangles/triangles.frag");
+            shader2.compile();
+
+            program.addShader(shader);
+            program.addShader(shader2);
+            program.link();
+
+        } catch (const ShaderException& e) {
+            Log::error(e.what());
+        }
+
+        glUseProgram(program.getHandler());
         glVertexAttribPointer(vPosition, 2, GL_FLOAT, GL_FALSE, 0, 0);
         glEnableVertexAttribArray(vPosition);
     }
 
     void draw() {
         glClear(GL_COLOR_BUFFER_BIT);
-    }
+        glBindVertexArray(VAOs[Triangles]);
+        glDrawArrays(GL_TRIANGLES, 0, NumVertices);    }
 
 }

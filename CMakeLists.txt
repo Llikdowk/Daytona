@@ -7,6 +7,8 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake)
 
 include(cmake/utils.cmake)
 
+file(COPY resources DESTINATION src)
+
 message("<thirdparty>")
 message("<GLAD>")
 add_subdirectory(thirdparty/glad)
