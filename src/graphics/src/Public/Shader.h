@@ -25,8 +25,8 @@ public:
     Shader& operator=(const Shader&) = delete;
     Shader& operator=(Shader&&) = delete;
 
-    void load(const char *path);
-    void compile();
+    Shader& load(const char *path);
+    Shader& compile();
 
 private:
     GLuint shader;
@@ -36,9 +36,9 @@ private:
 class ShaderProgram {
 public:
     ShaderProgram();
-    void addShader(const Shader& s);
-    void link();
-    GLuint getHandler();
+    ShaderProgram& attachShader(const Shader &s);
+    ShaderProgram& link();
+    ShaderProgram& install();
 
 private:
     GLuint program;

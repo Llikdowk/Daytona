@@ -45,26 +45,26 @@ namespace Renderer {
         glBufferData(GL_ARRAY_BUFFER, sizeof(vertices),
         vertices, GL_STATIC_DRAW);
 
-        ShaderProgram program;
         try {
 
+            ShaderProgram program;
             Shader shader(Shader::Type::Vertex);
-            shader.load("./resources/shaders/triangles/triangles.vert");
-            shader.compile();
+            shader.load("./resources/shaders/triangles/triangles.vert")
+                  .compile();
 
             Shader shader2(Shader::Type::Fragment);
-            shader2.load("./resources/shaders/triangles/triangles.frag");
-            shader2.compile();
+            shader2.load("./resources/shaders/triangles/triangles.frag")
+                   .compile();
 
-            program.addShader(shader);
-            program.addShader(shader2);
-            program.link();
+            program.attachShader(shader)
+                   .attachShader(shader2)
+                   .link()
+                   .install();
 
         } catch (const ShaderException& e) {
             Log::error(e.what());
         }
 
-        glUseProgram(program.getHandler());
         glVertexAttribPointer(vPosition, 2, GL_FLOAT, GL_FALSE, 0, 0);
         glEnableVertexAttribArray(vPosition);
     }

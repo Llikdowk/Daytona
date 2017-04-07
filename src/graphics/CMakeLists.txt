@@ -2,7 +2,7 @@ project(graphics)
 
 find_package(glm REQUIRED)
 
-set(SOURCE_FILES src/Public/Renderer.h src/Public/Shader.h src/Private/Shader.cpp src/Public/ErrorHandler.h src/Private/ErrorHandler.cpp)
+set(SOURCE_FILES src/Public/Renderer.h src/Public/Shader.h src/Private/Shader.cpp)
 add_library(_graphics ${SOURCE_FILES})
 target_include_directories(_graphics PUBLIC ${GLAD_INCLUDE_DIRS})
 target_include_directories(_graphics PUBLIC ${GLM_INCLUDE_DIRS})

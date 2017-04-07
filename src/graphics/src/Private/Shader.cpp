@@ -65,7 +65,7 @@ Shader::~Shader() {
     glDeleteShader(shader); // will be deferred until detached from program
 }
 
-void Shader::load(const char *path) {
+Shader& Shader::load(const char *path) {
     this->path = path;
     const GLchar* textPtr = nullptr;
     const GLchar** src = &textPtr;
@@ -83,9 +83,10 @@ void Shader::load(const char *path) {
 
     textPtr = text.data();
     glShaderSource(shader, 1, src, NULL);
+    return *this;
 }
 
-void Shader::compile() {
+Shader& Shader::compile() {
     glCompileShader(shader);
     GLint success = 0;
     glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
@@ -100,17 +101,19 @@ void Shader::compile() {
             throw CompilationException(path, "empty");
         }
     }
+    return *this;
 }
 
 ShaderProgram::ShaderProgram() {
     program = glCreateProgram();
 }
 
-void ShaderProgram::addShader(const Shader& s) {
+ShaderProgram& ShaderProgram::attachShader(const Shader &s) {
     shaders.push_back(&s);
+    return *this;
 }
 
-void ShaderProgram::link() {
+ShaderProgram& ShaderProgram::link() {
     for (auto it = shaders.begin(); it != shaders.end(); ++it) {
         const GLuint handler = (*it)->shader;
         glAttachShader(program, handler);
@@ -138,8 +141,11 @@ void ShaderProgram::link() {
         const GLuint handler = (*it)->shader;
         glDetachShader(program, handler);
     }
+
+    return *this;
 }
 
-GLuint ShaderProgram::getHandler() {
-    return program;
+ShaderProgram& ShaderProgram::install() {
+    glUseProgram(program);
+    return *this;
 }
