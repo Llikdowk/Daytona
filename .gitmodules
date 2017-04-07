@@ -7,3 +7,6 @@
 [submodule "thirdparty/googletest"]
 	path = thirdparty/googletest
 	url = git@github.com:google/googletest.git
+[submodule "thirdparty/assimp"]
+	path = thidparty/assimp
+	url = git@github.com:assimp/assimp.git

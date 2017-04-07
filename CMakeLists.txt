@@ -19,6 +19,13 @@ message("</SDL>")
 message("<GLM>")
 add_subdirectory(thirdparty/glm)
 message("</GLM>")
+message("<ASSIMP>")
+set( ASSIMP_LIB_INSTALL_DIR "code" CACHE STRING
+        "Path the built library files are installed to." )
+file(COPY "thirdparty/assimp/include" DESTINATION thirdparty/assimp)
+set(assimp_DIR "${CMAKE_BINARY_DIR}/thirdparty/assimp")
+add_subdirectory(thirdparty/assimp)
+message("</ASSIMP>")
 message("<googletest>")
 add_subdirectory(thirdparty/googletest)
 message("</googletest>")
@@ -36,5 +43,6 @@ message("</test>")
 install instructions:
 1. build glad
 2. build sdl (static and SDLmain)
+3. build assimp
 ]]
 
