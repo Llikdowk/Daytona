@@ -1,5 +1,5 @@
 [submodule "thirdparty/glad"]
-    path = thidrparty/glad
+    path = thirdparty/glad
     url = git@github.com:Dav1dde/glad.git
 [submodule "thirdparty/glm"]
 	path = thirdparty/glm
